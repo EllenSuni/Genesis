@@ -1,8 +1,94 @@
+@import 'shared-styles';
+@import 'gallery';
 
-$main-color: #4A4FF2;
-
-$font: 'Mulish', sans-serif;
-
-h1 {
-    font-family: $font;
+body {
+    max-width: 1110px;
+    width: 100%;
+    margin-inline: auto;
 }
+
+.nav {
+    min-height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        width: 162px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: $dark-color;
+        text-decoration: none;
+        @include font-bold;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.35x;
+    }
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    
+
+    &__quote {
+        max-width: 285px;
+        width: 100%;
+        min-height: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__line {
+            width: 40px;
+            height: 2px;
+            background-color: $dark-color;
+            opacity: 0.5;
+        }
+    
+        &__text {
+            @include font-regular-italic;
+            font-size: 18px;
+            line-height: 23px;
+            opacity: 0.6;
+            color: $dark-color;
+        }
+    }   
+}
+
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 635px;
+    width: 100%;
+    min-height: 245px;
+
+    &__small-header {
+        @include font-bold;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.42px;
+        color: $main-color;
+    }
+
+    &__header {
+        @include font-bold;
+        font-size: 40px;
+        line-height: 60px;
+        color: $dark-color;
+
+        &--blue {
+            color: $main-color;
+        }
+    }
+}
+
+
+

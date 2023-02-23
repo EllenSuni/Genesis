@@ -1,0 +1,26 @@
+$main-color: #4A4FF2;
+$dark-color: #111111;
+
+
+@mixin font-bold {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin font-regular {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font-regular-italic {
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+} 
+
+@mixin lines {
+    opacity: 0.3;
+    border: 1px solid #979797;
+}
