@@ -1,0 +1,21 @@
+.nav {
+    min-height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        width: 162px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: $dark-color;
+        text-decoration: none;
+        @include font-bold;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.35x;
+    }
+}

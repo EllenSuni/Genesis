@@ -1,0 +1,34 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 65px);
+    column-gap: 30px;
+    align-content: center;
+    min-height: 117px;
+
+    &__logo {
+        grid-column: span 8;
+    }
+
+    &__nav {
+        grid-column: span 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__links {
+            width: 163px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__socials {
+            width: 95px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.fa-brands {
+    color: #000;
+}
