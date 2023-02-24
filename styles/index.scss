@@ -34,7 +34,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
-    
+    min-height: 269px;
+    margin-bottom: 10rem;
 
     &__quote {
         max-width: 285px;
@@ -91,4 +92,33 @@ body {
 }
 
 
+.services {
+    min-height: 236px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    &__header {
+        max-width: 583px;
+        width: 100%;
+        @include font-bold;
+        font-size: 28px;
+        line-height: 38px;
+        color: $dark-color;
+    }
+
+    &__list {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 150px);
+        column-gap: 70px;
+        row-gap: 10px;
+
+        &__item {
+            @include font-regular;
+            font-size: 18px;
+            line-height: 23px;
+            color: $dark-color;
+            opacity: 0.6;
+        }
+    }
+}
