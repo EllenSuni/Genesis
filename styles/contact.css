@@ -56,4 +56,79 @@ body {
   width: 100%;
   margin-inline: auto;
 }
+
+main {
+  min-height: 1128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 425px;
+  width: 100%;
+}
+.text__heading {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #111111;
+  margin-bottom: 38px;
+}
+.text__text {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form {
+  max-width: 475px;
+  width: 100%;
+  min-height: 291px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__wrapper {
+  height: 37px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+
+label {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  margin-left: 20px;
+}
+
+button {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #4A4FF2;
+  width: 125px;
+  height: 50px;
+  border: none;
+}
 /*# sourceMappingURL=contact.css.map */

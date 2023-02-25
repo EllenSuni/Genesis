@@ -2,3 +2,73 @@
 @import 'header';
 @import 'footer';
 @import 'body';
+
+main {
+    min-height: 1128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    max-width: 425px;
+    width: 100%;
+
+    &__heading {
+        @include font-bold;
+        font-size: 40px;
+        line-height: 55px;
+        color: $dark-color;
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        @include font-regular;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.form {
+    max-width: 475px;
+    width: 100%;
+    min-height: 291px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__wrapper {
+    height: 37px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+
+label {
+    @include font-bold;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    margin-left: 20px;
+}
+
+button {
+    color: #fff;
+    @include font-bold;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: $main-color;
+    width: 125px;
+    height: 50px;
+    border: none;
+}
+
